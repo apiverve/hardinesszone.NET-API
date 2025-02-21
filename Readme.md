@@ -1,4 +1,4 @@
-Hardiness Zone Lookup API
+USDA Hardiness Zone API
 ============
 
 Hardiness Zone is a simple tool for getting the USDA Plant Hardiness Zone for a given zip code
@@ -7,7 +7,7 @@ Hardiness Zone is a simple tool for getting the USDA Plant Hardiness Zone for a 
 ![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
 ![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a .NET Wrapper for the [Hardiness Zone Lookup API](https://apiverve.com/marketplace/api/hardinesszone)
+This is a .NET Wrapper for the [USDA Hardiness Zone API](https://apiverve.com/marketplace/api/hardinesszone)
 
 ---
 
@@ -15,26 +15,26 @@ This is a .NET Wrapper for the [Hardiness Zone Lookup API](https://apiverve.com/
 
 Using the .NET CLI:
 ```
-dotnet add package APIVerve.API.HardinessZoneLookup
+dotnet add package APIVerve.API.USDAHardinessZone
 ```
 
 Using the Package Manager:
 ```
-nuget install APIVerve.API.HardinessZoneLookup
+nuget install APIVerve.API.USDAHardinessZone
 ```
 
 Using the Package Manager Console:
 ```
-Install-Package APIVerve.API.HardinessZoneLookup
+Install-Package APIVerve.API.USDAHardinessZone
 ```
 
 From within Visual Studio:
 
 1. Open the Solution Explorer.
 2. Right-click on a project within your solution.
-3. Click on Manage NuGet Packages...
-4. Click on the Browse tab and search for "APIVerve.API.HardinessZoneLookup".
-5. Click on the APIVerve.API.HardinessZoneLookup package, select the appropriate version in the right-tab and click Install.
+3. Click on Manage NuGet Packages..
+4. Click on the Browse tab and search for "APIVerve.API.USDAHardinessZone".
+5. Click on the APIVerve.API.USDAHardinessZone package, click Install.
 
 
 ---
@@ -48,17 +48,17 @@ You can get it by signing up at [https://apiverve.com](https://apiverve.com)
 
 ## Usage
 
-The Hardiness Zone Lookup API documentation is found here: [https://docs.apiverve.com/api/hardinesszone](https://docs.apiverve.com/api/hardinesszone).  
+The USDA Hardiness Zone API documentation is found here: [https://docs.apiverve.com/api/hardinesszone](https://docs.apiverve.com/api/hardinesszone).  
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
 
 ###### Authentication
-Hardiness Zone Lookup API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
+USDA Hardiness Zone API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
 
 ```
 // Create an instance of the API client
-var apiClient = new HardinessZoneLookupAPIClient("[YOUR_API_KEY]", true);
+var apiClient = new USDAHardinessZoneAPIClient("[YOUR_API_KEY]", true);
 ```
 
 ---
@@ -70,7 +70,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new HardinessZoneLookupQueryOptions {
+var queryOptions = new USDAHardinessZoneQueryOptions {
   zip = "97201"
 };
 ```
@@ -130,7 +130,7 @@ All usage of the APIVerve website, API, and services is subject to the [APIVerve
 ## License
 Licensed under the The MIT License (MIT)
 
-Copyright (&copy;) 2024 APIVerve, and Evlar LLC
+Copyright (&copy;) 2025 APIVerve, and EvlarSoft LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
